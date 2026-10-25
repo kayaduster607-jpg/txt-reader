@@ -1,0 +1,17 @@
+{
+  "name": "txt-md-reader",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local TXT and Markdown reader with resumable reading progress.",
+  "type": "module",
+  "scripts": {
+    "vendor": "node scripts/vendor.mjs",
+    "test": "node --test tests/reader.test.mjs",
+    "audit": "npm audit --audit-level=moderate"
+  },
+  "devDependencies": {
+    "dompurify": "3.4.17",
+    "jsdom": "30.1.3",
+    "marked": "18.1.1"
+  }
+}

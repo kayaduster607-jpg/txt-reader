@@ -1,0 +1,16 @@
+[
+  {
+    "name": "marked",
+    "version": "18.1.1",
+    "license": "MIT",
+    "file": "marked.umd.js",
+    "sha256": "954a1f4b768ed79d5369574959ea08148aa5c23df44f34cfc37fddc68ee31077"
+  },
+  {
+    "name": "dompurify",
+    "version": "3.4.17",
+    "license": "(MPL-2.0 OR Apache-2.0)",
+    "file": "purify.min.js",
+    "sha256": "1bb973289c6a99e511f9209b4159384a6020ead799eca059f065cf213b28e1f3"
+  }
+]

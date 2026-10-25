@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="920" viewBox="0 0 1800 920" font-family="Segoe UI, Microsoft YaHei, sans-serif">
+  <title>TXT / Markdown 阅读器：本地阅读流程</title>
+  <desc>用户选择本地文档，浏览器通过 FileReader 按 UTF-8 或 GBK 解码。TXT 安全渲染为段落，Markdown 经 Marked 解析及 DOMPurify 清洗。阅读位置保存在 localStorage，当前记录可单向导出为 JSON。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 z" fill="#A0A59E" />
+    </marker>
+  </defs>
+  <rect width="1800" height="920" fill="#FFFFFF" />
+  <text x="64" y="60" fill="#71618E" font-size="18" font-weight="400" text-anchor="start" font-family="Consolas, SFMono-Regular, monospace">TXT READER / LOCAL PROCESSING</text>
+  <text x="64" y="121" fill="#292C29" font-size="47" font-weight="700" text-anchor="start">本地阅读流程</text>
+  <text x="430" y="118" fill="#777C75" font-size="24" font-weight="400" text-anchor="start">文本解码  /  安全渲染  /  阅读记录</text>
+  <line x1="64" y1="155" x2="1736" y2="155" stroke="#DDDCD6" stroke-width="1.4" />
+  <path d="M64 264 h38 l18 18 v54 h-56 z" fill="#F0EEF4" stroke="#C5BDCF" stroke-width="1.3" />
+  <path d="M102 264 v18 h18" fill="none" stroke="#C5BDCF" stroke-width="1.3" />
+  <text x="92" y="315" fill="#71618E" font-size="18" font-weight="400" text-anchor="middle" font-family="Consolas, SFMono-Regular, monospace">TXT</text>
+  <text x="140" y="301" fill="#71618E" font-size="16" font-weight="400" text-anchor="start" font-family="Consolas, SFMono-Regular, monospace">LOCAL FILE</text>
+  <text x="64" y="363" fill="#292C29" font-size="30" font-weight="700" text-anchor="start">TXT / Markdown</text>
+  <text x="64" y="408" fill="#777C75" font-size="23" font-weight="400" text-anchor="start">选择本机文件</text>
+  <line x1="64" y1="438" x2="320" y2="438" stroke="#DDDCD6" stroke-width="1.4" />
+  <text x="64" y="478" fill="#777C75" font-size="22" font-weight="400" text-anchor="start">正文留在页面内存</text>
+  <path d="M 320 355 H 400" fill="none" stroke="#A0A59E" stroke-width="1.8" marker-end="url(#arrow)" stroke-linejoin="round" />
+  <text x="360" y="338" fill="#777C75" font-size="17" font-weight="400" text-anchor="middle">读取</text>
+  <rect x="400" y="230" width="1150" height="520" rx="12" fill="#F8F8F5" stroke="#BCBEB5" stroke-width="1.4" />
+  <text x="434" y="279" fill="#292C29" font-size="33" font-weight="700" text-anchor="start">浏览器内处理</text>
+  <text x="1516" y="278" fill="#777C75" font-size="19" font-weight="400" text-anchor="end" font-family="Consolas, SFMono-Regular, monospace">HTML / CSS / JavaScript</text>
+  <line x1="434" y1="310" x2="1516" y2="310" stroke="#DDDCD6" stroke-width="1.4" />
+  <text x="434" y="358" fill="#292C29" font-size="27" font-weight="600" text-anchor="start">FileReader 解码</text>
+  <text x="766" y="357" fill="#777C75" font-size="22" font-weight="400" text-anchor="start" font-family="Consolas, SFMono-Regular, monospace">UTF-8 / GBK</text>
+  <text x="434" y="425" fill="#71618E" font-size="23" font-weight="400" text-anchor="start" font-family="Consolas, SFMono-Regular, monospace">TXT</text>
+  <text x="554" y="425" fill="#292C29" font-size="27" font-weight="400" text-anchor="start">段落化 → textContent</text>
+  <text x="434" y="488" fill="#71618E" font-size="23" font-weight="400" text-anchor="start" font-family="Consolas, SFMono-Regular, monospace">MD</text>
+  <text x="554" y="488" fill="#292C29" font-size="27" font-weight="400" text-anchor="start">Marked → DOMPurify</text>
+  <path d="M 968 435 H 1148" fill="none" stroke="#A0A59E" stroke-width="1.8" marker-end="url(#arrow)" stroke-linejoin="round" />
+  <text x="1058" y="416" fill="#777C75" font-size="17" font-weight="400" text-anchor="middle">渲染</text>
+  <text x="1176" y="370" fill="#292C29" font-size="31" font-weight="700" text-anchor="start">阅读界面</text>
+  <text x="1176" y="412" fill="#777C75" font-size="22" font-weight="400" text-anchor="start">段落 · 标题 · 列表 · 代码</text>
+  <text x="1176" y="451" fill="#777C75" font-size="22" font-weight="400" text-anchor="start">三档字号 · 三种主题</text>
+  <text x="1176" y="490" fill="#777C75" font-size="21" font-weight="400" text-anchor="start">滚动 / 手动保存 / 导出</text>
+  <line x1="434" y1="551" x2="1516" y2="551" stroke="#DDDCD6" stroke-width="1.4" />
+  <rect x="434" y="596" width="520" height="112" rx="6" fill="#FFFFFF" stroke="#DDDCD6" stroke-width="1.4" />
+  <text x="456" y="625" fill="#71618E" font-size="15" font-weight="400" text-anchor="start" font-family="Consolas, SFMono-Regular, monospace">LOCAL PROGRESS</text>
+  <text x="456" y="667" fill="#292C29" font-size="27" font-weight="600" text-anchor="start" font-family="Consolas, SFMono-Regular, monospace">localStorage</text>
+  <text x="676" y="667" fill="#777C75" font-size="21" font-weight="400" text-anchor="start">文件名 / 位置 / 时间</text>
+  <path d="M 1276 514 V 652 H 954" fill="none" stroke="#A0A59E" stroke-width="1.8" marker-end="url(#arrow)" stroke-linejoin="round" />
+  <text x="1109" y="631" fill="#777C75" font-size="18" font-weight="400" text-anchor="middle">记录位置</text>
+  <path d="M 1430 514 V 652 H 1610" fill="none" stroke="#A0A59E" stroke-width="1.8" marker-end="url(#arrow)" stroke-linejoin="round" />
+  <text x="1586" y="632" fill="#777C75" font-size="17" font-weight="400" text-anchor="middle">导出</text>
+  <path d="M1632 581 h38 l18 18 v54 h-56 z" fill="#F0EEF4" stroke="#C5BDCF" stroke-width="1.3" />
+  <path d="M1670 581 v18 h18" fill="none" stroke="#C5BDCF" stroke-width="1.3" />
+  <text x="1660" y="632" fill="#71618E" font-size="18" font-weight="400" text-anchor="middle" font-family="Consolas, SFMono-Regular, monospace">JSON</text>
+  <text x="1610" y="702" fill="#292C29" font-size="29" font-weight="700" text-anchor="start">记录 JSON</text>
+  <text x="1610" y="739" fill="#777C75" font-size="20" font-weight="400" text-anchor="start">仅当前位置元数据</text>
+  <line x1="64" y1="855" x2="1736" y2="855" stroke="#DDDCD6" stroke-width="1.4" />
+  <text x="64" y="897" fill="#71618E" font-size="16" font-weight="400" text-anchor="start" font-family="Consolas, SFMono-Regular, monospace">STATIC APP</text>
+  <text x="265" y="897" fill="#292C29" font-size="22" font-weight="400" text-anchor="start">file://  /  普通静态托管</text>
+  <text x="1736" y="897" fill="#777C75" font-size="22" font-weight="400" text-anchor="end">无需账号、后端或 API Key</text>
+</svg>

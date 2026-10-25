@@ -1,0 +1,24 @@
+# Private documents and progress exports are not part of this application.
+.env
+.env.*
+**/.env*
+*.pem
+*.key
+*_记录.json
+*_progress.json
+/books/
+/documents/
+
+# Dependencies, tools, and generated verification output.
+node_modules/
+.claude/
+.idea/
+.vscode/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.log
+coverage/
+.DS_Store
+Thumbs.db
