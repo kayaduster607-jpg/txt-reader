@@ -1,5 +1,7 @@
 # TXT / Markdown 阅读器
 
+[简体中文](README.md) | [English](README.en.md)
+
 把本机的 TXT、Markdown 放进一个干净的阅读页面：切换 UTF-8 / GBK、调整字号和主题，下一次从保存的位置继续。
 
 这是一个纯静态网页。**下载完整仓库，双击 `index.html` 即可使用**；无需账号、后端、Node.js 或 API Key。文档由浏览器读取，正文不会上传到应用服务器。
